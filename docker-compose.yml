@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dev:
+    container_name: derailed_reproduction
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh start.sh 3000 development
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
