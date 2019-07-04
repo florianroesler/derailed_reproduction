@@ -1,4 +1,4 @@
-FROM ruby:2.5.1-alpine
+FROM ruby@sha256:dab7bf80fadf71027b94350f09bc8fa16b57dc9d7a8cbf5ff4693b6677014c74
 
 RUN apk add --update alpine-sdk nodejs libxml2-dev libxslt-dev git less tzdata sqlite-dev
 
